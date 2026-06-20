@@ -12,23 +12,32 @@ def process_input(user_input):
 
 css = """
 body {
-    background: linear-gradient(
-        135deg,
-        #0f172a,
-        #111827
-    );
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(59,130,246,0.25),
+            transparent 40%
+        ),
+
+        radial-gradient(
+            circle at top right,
+            rgba(168,85,247,0.25),
+            transparent 40%
+        ),
+
+        #050816;
 }
 
 .gradio-container {
-    max-width: 1200px !important;
+    max-width: 1400px !important;
 }
 
 .hero-card {
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(20px);
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(25px);
     border-radius: 25px;
-    padding: 30px;
-    border: 1px solid rgba(255,255,255,0.1);
+    padding: 35px;
+    border: 1px solid rgba(255,255,255,0.08);
     margin-bottom: 25px;
 }
 
@@ -36,36 +45,18 @@ body {
     background: linear-gradient(
         90deg,
         #60a5fa,
-        #a78bfa,
+        #8b5cf6,
         #ec4899
     );
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
     font-weight: 800;
 }
 
-.gr-button {
-    background: linear-gradient(
-        90deg,
-        #3b82f6,
-        #8b5cf6
-    ) !important;
-
-    border: none !important;
-
-    color: white !important;
-
-    font-weight: bold !important;
-
-    transition: all 0.3s ease !important;
-}
-
-.gr-button:hover {
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 0 20px rgba(139,92,246,0.5),
-        0 0 40px rgba(59,130,246,0.3);
+.big-button {
+    margin-top: 20px;
 }
 """
 
@@ -75,49 +66,81 @@ with gr.Blocks(
     css=css
 ) as demo:
 
-    gr.HTML("""
-    <div class="hero-card">
+    gr.HTML(
+        '''
+        <div class="hero-card">
 
-        <h1 class="gradient-text">
-            🚀 Startup Validation Agent
-        </h1>
+            <h1
+                class="gradient-text"
+                style="
+                font-size:72px;
+                margin-bottom:10px;
+                "
+            >
+                🚀 Startup Validation Agent
+            </h1>
 
-        <h3>
-            AI-Powered Startup Intelligence Platform
-        </h3>
+            <h2
+                style="
+                color:#cbd5e1;
+                margin-bottom:15px;
+                "
+            >
+                AI-Powered Startup Intelligence Platform
+            </h2>
 
-        <p>
-            Validate startup ideas using Market Analysis,
-            Competitor Research, SWOT Analysis,
-            Memory Systems, MCP Integration
-            and Security Protection.
-        </p>
+            <p
+                style="
+                font-size:20px;
+                color:#94a3b8;
+                "
+            >
+                Validate ideas before you waste months building them.
+            </p>
 
-        <br>
+            <br>
 
-        <b>Built by Roshan Kumar Jha</b>
+            <div
+                style="
+                display:inline-block;
+                padding:10px 20px;
+                border-radius:20px;
+                background:rgba(59,130,246,0.15);
+                border:1px solid rgba(96,165,250,0.3);
+                "
+            >
+                Built by Roshan Kumar Jha
+            </div>
 
-    </div>
-    """)
+        </div>
+        '''
+    )
+    with gr.Row():
 
-    with gr.Group(elem_classes="hero-card"):
+        with gr.Column(scale=1):
 
-        startup_input = gr.Textbox(
-            label="🚀 Startup Idea",
-            placeholder="Describe your startup idea here...",
-            lines=4
-        )
+            with gr.Group(elem_classes="hero-card"):
 
-        analyze_btn = gr.Button(
-            "✨ Analyze Startup"
-        )
+                startup_input = gr.Textbox(
+                    label="🚀 Startup Idea",
+                    placeholder="Describe your startup idea here...",
+                    lines=10
+                )
 
-    with gr.Group(elem_classes="hero-card"):
+        with gr.Column(scale=2):
 
-        output = gr.Textbox(
-            label="📊 Validation Report",
-            lines=25
-        )
+            with gr.Group(elem_classes="hero-card"):
+
+                output = gr.Textbox(
+                    label="📊 Validation Report",
+                    lines=25
+                )
+
+    analyze_btn = gr.Button(
+        "✨ ANALYZE STARTUP ✨",
+        size="lg",
+        elem_classes="big-button"
+    )
 
     analyze_btn.click(
         fn=process_input,
