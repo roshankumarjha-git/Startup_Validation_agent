@@ -66,7 +66,29 @@ body {
 }
 
 .big-button {
-    margin-top: 20px;
+    background: linear-gradient(
+        90deg,
+        #3b82f6,
+        #8b5cf6,
+        #ec4899,
+        #f97316
+    ) !important;
+
+    color: white !important;
+
+    font-weight: bold !important;
+
+    border: none !important;
+
+    box-shadow:
+        0 0 20px rgba(168,85,247,0.5),
+        0 0 40px rgba(236,72,153,0.4);
+
+    border-radius: 18px !important;
+
+    min-height: 70px !important;
+
+    font-size: 24px !important;
 }
 """
 
