@@ -152,7 +152,7 @@ with gr.Blocks(
 
         with gr.Column(scale=1):
 
-            with gr.Group(elem_classes="hero-card"):
+            with gr.Column():
 
                 startup_input = gr.Textbox(
                     label="🚀 Startup Idea",
@@ -162,7 +162,7 @@ with gr.Blocks(
 
         with gr.Column(scale=2):
 
-            with gr.Group(elem_classes="hero-card"):
+            with gr.Column():
 
                 output = gr.Textbox(
                     label="📊 Validation Report",
