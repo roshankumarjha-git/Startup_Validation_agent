@@ -36,7 +36,7 @@ body {
     background: rgba(255,255,255,0.04);
     backdrop-filter: blur(25px);
     border-radius: 25px;
-    padding: 35px;
+    padding: 20px;
     border: 1px solid rgba(255,255,255,0.08);
     margin-bottom: 25px;
 }
