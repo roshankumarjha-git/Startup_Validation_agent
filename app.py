@@ -10,19 +10,34 @@ def process_input(user_input):
         return f"Error: {str(e)}"
 
 
-demo = gr.Interface(
-    fn=process_input,
-    inputs=gr.Textbox(
-        lines=3,
-        placeholder="Enter your startup idea..."
-    ),
-    outputs=gr.Textbox(),
-    title="🚀 Startup Validation Agent",
-    description="""
-Validate startup ideas using AI-powered market analysis,
-competitor research, SWOT analysis, memory, MCP tools,
-and security protection.
-"""
-)
+with gr.Blocks(theme=gr.themes.Soft()) as demo:
+
+    gr.Markdown("""
+# 🚀 Startup Validation Agent
+
+### Validate startup ideas using AI-powered market analysis,
+### competitor research, SWOT analysis, MCP, memory and security.
+
+**Built by Roshan Kumar Jha**
+""")
+
+    startup_input = gr.Textbox(
+        label="Startup Idea",
+        placeholder="Describe your startup idea here...",
+        lines=4
+    )
+
+    analyze_btn = gr.Button("Analyze Startup")
+
+    output = gr.Textbox(
+        label="Validation Report",
+        lines=25
+    )
+
+    analyze_btn.click(
+        fn=process_input,
+        inputs=startup_input,
+        outputs=output
+    )
 
 demo.launch(server_name="0.0.0.0", server_port=7860)
