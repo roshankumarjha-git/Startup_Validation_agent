@@ -162,6 +162,7 @@ with gr.Blocks(
                 border:1px solid rgba(96,165,250,0.3);
                 "
             >
+            <div class="roshan-badge">
                 Built by Roshan Kumar Jha
             </div>
 
