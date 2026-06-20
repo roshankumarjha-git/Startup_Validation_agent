@@ -35,10 +35,11 @@ body {
 .hero-card {
     background: rgba(15,23,42,0.75);
 
-    border: 1px solid rgba(168,85,247,0.25);
+    border: 1px solid rgba(239,68,68,0.45);
 
     box-shadow:
-        0 0 25px rgba(168,85,247,0.12);
+        0 0 20px rgba(239,68,68,0.15),
+        0 0 40px rgba(236,72,153,0.08);
 
     backdrop-filter: blur(20px);
 
@@ -81,8 +82,8 @@ textarea {
     background: linear-gradient(
         90deg,
         #7c3aed,
-        #ec4899,
-        #f97316
+        #a855f7,
+        #ec4899
     ) !important;
 
     color: white !important;
@@ -98,8 +99,8 @@ textarea {
     font-size: 30px !important;
 
     box-shadow:
-        0 0 20px rgba(236,72,153,0.4),
-        0 0 40px rgba(249,115,22,0.3);
+        0 0 20px rgba(168,85,247,0.4),
+        0 0 40px rgba(236,72,153,0.25);
 }
 
 .big-button:hover {
