@@ -1,6 +1,6 @@
 
 from google import genai
-from google.colab import userdata
+import os
 
 from project.mcp.mcp_server import MCPServer
 from project.tools.tools import startup_summary
@@ -10,7 +10,7 @@ class Worker:
     def __init__(self):
 
         self.client = genai.Client(
-            api_key=userdata.get("GOOGLE_API_KEY")
+            api_key=os.getenv("GOOGLE_API_KEY")
         )
 
         self.mcp = MCPServer()
