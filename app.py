@@ -32,14 +32,20 @@ body {
     max-width: 1350px !important;
 }
 
+/* Removes a lot of Gradio's extra box feeling */
+.gr-box {
+    border: none !important;
+    box-shadow: none !important;
+}
+
 .hero-card {
     background: rgba(15,23,42,0.75);
 
     border: 1px solid rgba(239,68,68,0.45);
 
     box-shadow:
-        0 0 20px rgba(239,68,68,0.15),
-        0 0 40px rgba(236,72,153,0.08);
+        0 0 15px rgba(239,68,68,0.12),
+        0 0 30px rgba(236,72,153,0.08);
 
     backdrop-filter: blur(20px);
 
@@ -48,14 +54,6 @@ body {
     padding: 12px;
 
     margin-bottom: 15px;
-
-    transition: all 0.3s ease;
-}
-
-.hero-card:hover {
-    box-shadow:
-        0 0 25px rgba(239,68,68,0.25),
-        0 0 50px rgba(236,72,153,0.15);
 }
 
 .gradient-text {
@@ -70,16 +68,6 @@ body {
     -webkit-text-fill-color: transparent;
 
     font-weight: 800;
-
-    transition: all 0.3s ease;
-}
-
-.gradient-text:hover {
-    transform: scale(1.02);
-
-    filter: drop-shadow(
-        0 0 15px rgba(236,72,153,0.5)
-    );
 }
 
 .roshan-badge {
@@ -87,44 +75,33 @@ body {
 
     padding: 10px 20px;
 
-    border-radius: 20px;
+    border-radius: 18px;
 
-    background: rgba(239,68,68,0.10);
+    background: rgba(15,23,42,0.95);
 
     border: 1px solid rgba(239,68,68,0.35);
 
     transition: all 0.3s ease;
-
-    cursor: default;
 }
 
 .roshan-badge:hover {
-
-    transform: scale(1.08);
+    transform: scale(1.05);
 
     box-shadow:
-        0 0 20px rgba(239,68,68,0.35),
-        0 0 40px rgba(236,72,153,0.20);
-
-    border: 1px solid rgba(239,68,68,0.75);
+        0 0 12px rgba(239,68,68,0.20);
 }
 
 .startup-class textarea {
     background: rgba(20,20,35,0.95) !important;
 
-    border: 2px solid rgba(168,85,247,0.5) !important;
+    border: 2px solid rgba(168,85,247,0.65) !important;
 
     border-radius: 18px !important;
 
     color: white !important;
-
-    transition: all 0.3s ease;
 }
 
 .startup-class textarea:hover {
-
-    border-color: #c084fc !important;
-
     box-shadow:
         0 0 15px rgba(168,85,247,0.35);
 }
@@ -132,19 +109,14 @@ body {
 .output-class textarea {
     background: rgba(20,20,35,0.95) !important;
 
-    border: 2px solid rgba(249,115,22,0.7) !important;
+    border: 2px solid rgba(249,115,22,0.70) !important;
 
     border-radius: 18px !important;
 
     color: white !important;
-
-    transition: all 0.3s ease;
 }
 
 .output-class textarea:hover {
-
-    border-color: #fb923c !important;
-
     box-shadow:
         0 0 15px rgba(249,115,22,0.30);
 }
@@ -153,8 +125,8 @@ body {
     background: linear-gradient(
         90deg,
         #7c3aed,
-        #a855f7,
-        #ec4899
+        #ec4899,
+        #f97316
     ) !important;
 
     color: white !important;
@@ -170,18 +142,18 @@ body {
     font-size: 30px !important;
 
     box-shadow:
-        0 0 20px rgba(168,85,247,0.4),
-        0 0 40px rgba(236,72,153,0.25);
+        0 0 20px rgba(236,72,153,0.35),
+        0 0 40px rgba(249,115,22,0.20);
 
-    transition: all 0.3s ease !important;
+    transition: all 0.3s ease;
 }
 
 .big-button:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
 
     box-shadow:
-        0 0 30px rgba(236,72,153,0.6),
-        0 0 60px rgba(168,85,247,0.5);
+        0 0 30px rgba(236,72,153,0.55),
+        0 0 60px rgba(249,115,22,0.35);
 }
 """
 
