@@ -105,7 +105,15 @@ body {
 
     border-radius: 18px;
 
-    background: rgba(15,23,42,0.95);
+    background: linear-gradient(
+        90deg,
+        rgba(124,58,237,0.85),
+        rgba(236,72,153,0.85)
+    );
+
+    color: white !important;
+
+    font-weight: 700;
 
     border: 1px solid rgba(239,68,68,0.35);
 
