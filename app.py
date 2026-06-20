@@ -34,11 +34,20 @@ body {
 
 .hero-card {
     background: rgba(15,23,42,0.85);
-    backdrop-filter: blur(25px);
-    border-radius: 25px;
-    padding: 20px;
+
     border: 1px solid rgba(139,92,246,0.5);
-    margin-bottom: 25px;
+
+    box-shadow:
+        0 0 20px rgba(139,92,246,0.25),
+        0 0 40px rgba(59,130,246,0.15);
+
+    backdrop-filter: blur(20px);
+
+    border-radius: 25px;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
 }
 
 .gradient-text {
