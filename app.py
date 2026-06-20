@@ -74,7 +74,7 @@ with gr.Blocks(
             <h1
                 class="gradient-text"
                 style="
-                font-size:72px;
+                font-size:48px;
                 margin-bottom:10px;
                 "
             >
