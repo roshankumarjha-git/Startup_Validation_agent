@@ -174,6 +174,7 @@ with gr.Blocks(
             with gr.Column():
 
                 startup_input = gr.Textbox(
+                    elem_classes="startup-class",
                     label="🚀 Startup Idea",
                     placeholder="Describe your startup idea here...",
                     lines=5
@@ -184,6 +185,7 @@ with gr.Blocks(
             with gr.Column():
 
                 output = gr.Textbox(
+                    elem_classes="output-class",
                     label="📊 Validation Report",
                     lines=10
                 )
