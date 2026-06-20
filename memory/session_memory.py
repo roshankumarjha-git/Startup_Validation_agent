@@ -6,7 +6,7 @@ class SessionMemory:
 
     def __init__(self):
 
-        self.memory_file = "project/memory/user_memory.json"
+        self.memory_file = "/memory/user_memory.json"
 
         if not os.path.exists(self.memory_file):
             with open(self.memory_file, "w") as f:
