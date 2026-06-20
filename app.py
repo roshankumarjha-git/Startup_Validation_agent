@@ -124,7 +124,7 @@ with gr.Blocks(
                 startup_input = gr.Textbox(
                     label="🚀 Startup Idea",
                     placeholder="Describe your startup idea here...",
-                    lines=10
+                    lines=6
                 )
 
         with gr.Column(scale=2):
@@ -133,7 +133,7 @@ with gr.Blocks(
 
                 output = gr.Textbox(
                     label="📊 Validation Report",
-                    lines=25
+                    lines=15
                 )
 
     analyze_btn = gr.Button(
