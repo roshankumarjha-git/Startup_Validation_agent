@@ -15,13 +15,13 @@ body {
     background:
         radial-gradient(
             circle at top left,
-            rgba(59,130,246,0.25),
+            rgba(168,85,247,0.18),
             transparent 40%
         ),
 
         radial-gradient(
             circle at top right,
-            rgba(168,85,247,0.25),
+            rgba(249,115,22,0.18),
             transparent 40%
         ),
 
@@ -29,31 +29,29 @@ body {
 }
 
 .gradio-container {
-    max-width: 1400px !important;
+    max-width: 1350px !important;
 }
 
 .hero-card {
-    background: rgba(15,23,42,0.85);
+    background: rgba(15,23,42,0.75);
 
-    border: 1px solid rgba(139,92,246,0.5);
+    border: 1px solid rgba(168,85,247,0.25);
 
     box-shadow:
-        0 0 20px rgba(139,92,246,0.25),
-        0 0 40px rgba(59,130,246,0.15);
+        0 0 25px rgba(168,85,247,0.12);
 
     backdrop-filter: blur(20px);
 
-    border-radius: 25px;
+    border-radius: 20px;
 
-    padding: 20px;
+    padding: 12px;
 
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .gradient-text {
     background: linear-gradient(
         90deg,
-        #38bdf8,
         #8b5cf6,
         #ec4899,
         #f97316
@@ -65,11 +63,24 @@ body {
     font-weight: 800;
 }
 
+textarea {
+    background: rgba(20,20,35,0.95) !important;
+
+    border: 2px solid rgba(168,85,247,0.5) !important;
+
+    border-radius: 18px !important;
+
+    color: white !important;
+}
+
+.output-class textarea {
+    border: 2px solid rgba(249,115,22,0.7) !important;
+}
+
 .big-button {
     background: linear-gradient(
         90deg,
-        #3b82f6,
-        #8b5cf6,
+        #7c3aed,
         #ec4899,
         #f97316
     ) !important;
@@ -80,15 +91,23 @@ body {
 
     border: none !important;
 
+    border-radius: 20px !important;
+
+    min-height: 85px !important;
+
+    font-size: 30px !important;
+
     box-shadow:
-        0 0 20px rgba(168,85,247,0.5),
-        0 0 40px rgba(236,72,153,0.4);
+        0 0 20px rgba(236,72,153,0.4),
+        0 0 40px rgba(249,115,22,0.3);
+}
 
-    border-radius: 18px !important;
+.big-button:hover {
+    transform: translateY(-2px);
 
-    min-height: 70px !important;
-
-    font-size: 24px !important;
+    box-shadow:
+        0 0 30px rgba(236,72,153,0.6),
+        0 0 60px rgba(249,115,22,0.4);
 }
 """
 
