@@ -10,7 +10,41 @@ def process_input(user_input):
         return f"Error: {str(e)}"
 
 
-with gr.Blocks(theme=gr.themes.Base()) as demo:
+css = """
+body {
+    background: linear-gradient(135deg, #0f172a, #111827);
+}
+
+.gradio-container {
+    max-width: 1200px !important;
+}
+
+.hero-card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    padding: 30px;
+    border: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 25px;
+}
+
+.gradient-text {
+    background: linear-gradient(
+        90deg,
+        #60a5fa,
+        #a78bfa,
+        #ec4899
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+"""
+
+with gr.Blocks(
+    theme=gr.themes.Base(),
+    css=css
+) as demo:
 
     gr.Markdown("""
 # 🚀 Startup Validation Agent
