@@ -17,8 +17,12 @@ demo = gr.Interface(
         placeholder="Enter your startup idea..."
     ),
     outputs=gr.Textbox(),
-    title="Startup Validation Agent",
-    description="AI-powered startup validation using Multi-Agent Architecture, MCP, Memory, and Security."
+    title="🚀 Startup Validation Agent",
+    description="""
+Validate startup ideas using AI-powered market analysis,
+competitor research, SWOT analysis, memory, MCP tools,
+and security protection.
+"""
 )
 
 demo.launch(server_name="0.0.0.0", server_port=7860)
