@@ -239,20 +239,10 @@ with gr.Blocks(
 
             <br>
 
-            <div
-                style="
-                display:inline-block;
-                padding:10px 20px;
-                border-radius:20px;
-                background:rgba(59,130,246,0.15);
-                border:1px solid rgba(96,165,250,0.3);
-                "
-            >
             <span class="roshan-badge">
                 Built by Roshan Kumar Jha
             </span>
 
-        </div>
         '''
     )
     with gr.Row():
