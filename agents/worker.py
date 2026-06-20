@@ -1,11 +1,11 @@
 from google import genai
-from google.colab import userdata
+import os
 
 class Worker:
 
     def __init__(self):
-        self.client = genai.Client(api
-            _key=userdata.get("GOOGLE_API_KEY")
+        self.client = genai.Client(
+            api_key=os.getenv("GOOGLE_API_KEY")
         )
 
     def execute(self, plan):
