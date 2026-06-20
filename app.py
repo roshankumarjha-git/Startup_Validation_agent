@@ -96,6 +96,7 @@ body {
 with gr.Blocks(
     theme=gr.themes.Base(),
     css=css
+    title="Startup Validation Agent"
 ) as demo:
 
     gr.HTML(
