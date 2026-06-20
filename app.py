@@ -107,8 +107,7 @@ body {
 
     background: linear-gradient(
         90deg,
-        #450a0a,
-        #991b1b,
+        #7f1d1d,
         #dc2626
     );
 
