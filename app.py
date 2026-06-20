@@ -32,8 +32,13 @@ body {
     max-width: 1350px !important;
 }
 
-/* Removes a lot of Gradio's extra box feeling */
-.gr-box {
+/* Attempt to kill extra Gradio wrappers */
+.form {
+    background: transparent !important;
+    border: none !important;
+}
+
+.block {
     border: none !important;
     box-shadow: none !important;
 }
@@ -54,9 +59,19 @@ body {
     padding: 12px;
 
     margin-bottom: 15px;
+
+    transition: all 0.3s ease;
+}
+
+.hero-card:hover {
+    box-shadow:
+        0 0 25px rgba(239,68,68,0.20),
+        0 0 45px rgba(236,72,153,0.12);
 }
 
 .gradient-text {
+    display: inline-block;
+
     background: linear-gradient(
         90deg,
         #8b5cf6,
@@ -68,6 +83,19 @@ body {
     -webkit-text-fill-color: transparent;
 
     font-weight: 800;
+
+    transition: all 0.3s ease;
+}
+
+.gradient-text:hover {
+
+    transform: scale(1.05);
+
+    filter: drop-shadow(
+        0 0 20px rgba(236,72,153,0.7)
+    );
+
+    cursor: default;
 }
 
 .roshan-badge {
@@ -99,9 +127,12 @@ body {
     border-radius: 18px !important;
 
     color: white !important;
+
+    transition: all 0.3s ease;
 }
 
 .startup-class textarea:hover {
+
     box-shadow:
         0 0 15px rgba(168,85,247,0.35);
 }
@@ -114,9 +145,12 @@ body {
     border-radius: 18px !important;
 
     color: white !important;
+
+    transition: all 0.3s ease;
 }
 
 .output-class textarea:hover {
+
     box-shadow:
         0 0 15px rgba(249,115,22,0.30);
 }
@@ -149,7 +183,8 @@ body {
 }
 
 .big-button:hover {
-    transform: scale(1.02);
+
+    transform: scale(1.03);
 
     box-shadow:
         0 0 30px rgba(236,72,153,0.55),
@@ -221,6 +256,7 @@ with gr.Blocks(
             with gr.Column():
 
                 startup_input = gr.Textbox(
+                    container=False,
                     elem_classes="startup-class",
                     label="🚀 Startup Idea",
                     placeholder="Describe your startup idea here...",
@@ -232,6 +268,7 @@ with gr.Blocks(
             with gr.Column():
 
                 output = gr.Textbox(
+                    container=False,
                     elem_classes="output-class",
                     label="📊 Validation Report",
                     lines=10
