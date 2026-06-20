@@ -115,7 +115,11 @@ body {
 .roshan-badge:hover {
     transform: scale(1.05);
 
-    box-shadow: none !important;
+    box-shadow:
+        0 0 12px rgba(239,68,68,0.35),
+        0 0 24px rgba(236,72,153,0.20);
+
+    border: 1px solid rgba(239,68,68,0.55);
 }
 
 .startup-class textarea {
@@ -241,9 +245,9 @@ with gr.Blocks(
                 border:1px solid rgba(96,165,250,0.3);
                 "
             >
-            <div class="roshan-badge">
+            <span class="roshan-badge">
                 Built by Roshan Kumar Jha
-            </div>
+            </span>
 
         </div>
         '''
@@ -270,7 +274,7 @@ with gr.Blocks(
                     container=False,
                     elem_classes="output-class",
                     label="📊 Validation Report",
-                    placeholder="Your validation report will appear here after analysis"
+                    placeholder="Your validation report will appear here after analysis",
                     lines=10
                 )
 
