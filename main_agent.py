@@ -21,7 +21,7 @@ class MainAgent:
                 "response": "Security Warning: Potential prompt injection detected. Request blocked."
             }
 
-        user_id = "Roshan"
+        user_id = "default_user"
 
         self.memory.save_user_idea(
             user_id,

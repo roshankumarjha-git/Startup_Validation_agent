@@ -1,23 +1,11 @@
-
 from google import genai
-import os
-
-from project.mcp.mcp_server import MCPServer
-from project.tools.tools import startup_summary
+from google.colab import userdata
 
 class Worker:
 
     def __init__(self):
-
-        self.client = genai.Client(
-            api_key=os.getenv("GOOGLE_API_KEY")
-        )
-
-        self.mcp = MCPServer()
-
-        self.mcp.register_tool(
-            "summary",
-            startup_summary
+        self.client = genai.Client(api
+            _key=userdata.get("GOOGLE_API_KEY")
         )
 
     def execute(self, plan):
@@ -47,12 +35,6 @@ Keep the response concise.
             contents=prompt
         )
 
-        summary = self.mcp.call_tool(
-            "summary",
-            response.text
-        )
-
         return {
-            "analysis": response.text,
-            "summary": summary
+            "analysis": response.text
         }
