@@ -185,7 +185,7 @@ with gr.Blocks(
 
                 output = gr.Textbox(
                     label="📊 Validation Report",
-                    lines=12
+                    lines=10
                 )
 
     analyze_btn = gr.Button(
