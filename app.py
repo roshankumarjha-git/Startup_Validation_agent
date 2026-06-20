@@ -105,17 +105,13 @@ body {
 
     border-radius: 18px;
 
-    background: linear-gradient(
-        90deg,
-        #7f1d1d,
-        #dc2626
-    );
+    background: rgba(127,29,29,0.55)
 
     color: white !important;
 
     font-weight: 700;
 
-    border: 1px solid rgba(239,68,68,0.6);
+    border: 1px solid rgba(239,68,68,0.45);
 
     transition: all 0.3s ease;
 }
@@ -124,8 +120,7 @@ body {
     transform: scale(1.05);
 
     box-shadow:
-        0 0 15px rgba(239,68,68,0.45),
-        0 0 30px rgba(236,72,153,0.25);
+        0 0 12px rgba(239,68,68,0.25),
 
     border: 1px solid rgba(239,68,68,0.8);
 }
