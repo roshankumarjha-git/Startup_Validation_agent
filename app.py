@@ -170,7 +170,7 @@ with gr.Blocks(
                 )
 
     analyze_btn = gr.Button(
-        ""🚀 ANALYZE STARTUP 🚀"",
+        "🚀 ANALYZE STARTUP 🚀",
         size="lg",
         elem_classes="big-button"
     )
