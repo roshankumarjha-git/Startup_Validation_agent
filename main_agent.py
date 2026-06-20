@@ -1,9 +1,9 @@
 
-from project.agents.planner import Planner
-from project.agents.worker import Worker
-from project.agents.evaluator import Evaluator
-from project.memory.session_memory import SessionMemory
-from project.core.security import SecurityManager
+from agents.planner import Planner
+from agents.worker import Worker
+from agents.evaluator import Evaluator
+from memory.session_memory import SessionMemory
+from core.security import SecurityManager
 
 class MainAgent:
 
