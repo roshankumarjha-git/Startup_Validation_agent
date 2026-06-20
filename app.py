@@ -107,15 +107,16 @@ body {
 
     background: linear-gradient(
         90deg,
-        rgba(124,58,237,0.85),
-        rgba(236,72,153,0.85)
+        #450a0a,
+        #991b1b,
+        #dc2626
     );
 
     color: white !important;
 
     font-weight: 700;
 
-    border: 1px solid rgba(239,68,68,0.35);
+    border: 1px solid rgba(239,68,68,0.6);
 
     transition: all 0.3s ease;
 }
@@ -124,10 +125,10 @@ body {
     transform: scale(1.05);
 
     box-shadow:
-        0 0 12px rgba(239,68,68,0.35),
-        0 0 24px rgba(236,72,153,0.20);
+        0 0 15px rgba(239,68,68,0.45),
+        0 0 30px rgba(236,72,153,0.25);
 
-    border: 1px solid rgba(239,68,68,0.55);
+    border: 1px solid rgba(239,68,68,0.8);
 }
 
 .startup-class textarea {
