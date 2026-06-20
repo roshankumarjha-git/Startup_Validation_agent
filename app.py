@@ -48,6 +48,14 @@ body {
     padding: 12px;
 
     margin-bottom: 15px;
+
+    transition: all 0.3s ease;
+}
+
+.hero-card:hover {
+    box-shadow:
+        0 0 25px rgba(239,68,68,0.25),
+        0 0 50px rgba(236,72,153,0.15);
 }
 
 .gradient-text {
@@ -62,9 +70,46 @@ body {
     -webkit-text-fill-color: transparent;
 
     font-weight: 800;
+
+    transition: all 0.3s ease;
 }
 
-textarea {
+.gradient-text:hover {
+    transform: scale(1.02);
+
+    filter: drop-shadow(
+        0 0 15px rgba(236,72,153,0.5)
+    );
+}
+
+.roshan-badge {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border-radius: 20px;
+
+    background: rgba(239,68,68,0.10);
+
+    border: 1px solid rgba(239,68,68,0.35);
+
+    transition: all 0.3s ease;
+
+    cursor: default;
+}
+
+.roshan-badge:hover {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 20px rgba(239,68,68,0.35),
+        0 0 40px rgba(236,72,153,0.20);
+
+    border: 1px solid rgba(239,68,68,0.75);
+}
+
+.startup-class textarea {
     background: rgba(20,20,35,0.95) !important;
 
     border: 2px solid rgba(168,85,247,0.5) !important;
@@ -72,10 +117,36 @@ textarea {
     border-radius: 18px !important;
 
     color: white !important;
+
+    transition: all 0.3s ease;
+}
+
+.startup-class textarea:hover {
+
+    border-color: #c084fc !important;
+
+    box-shadow:
+        0 0 15px rgba(168,85,247,0.35);
 }
 
 .output-class textarea {
+    background: rgba(20,20,35,0.95) !important;
+
     border: 2px solid rgba(249,115,22,0.7) !important;
+
+    border-radius: 18px !important;
+
+    color: white !important;
+
+    transition: all 0.3s ease;
+}
+
+.output-class textarea:hover {
+
+    border-color: #fb923c !important;
+
+    box-shadow:
+        0 0 15px rgba(249,115,22,0.30);
 }
 
 .big-button {
@@ -101,14 +172,16 @@ textarea {
     box-shadow:
         0 0 20px rgba(168,85,247,0.4),
         0 0 40px rgba(236,72,153,0.25);
+
+    transition: all 0.3s ease !important;
 }
 
 .big-button:hover {
-    transform: translateY(-2px);
+    transform: scale(1.03);
 
     box-shadow:
         0 0 30px rgba(236,72,153,0.6),
-        0 0 60px rgba(249,115,22,0.4);
+        0 0 60px rgba(168,85,247,0.5);
 }
 """
 
