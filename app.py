@@ -10,15 +10,27 @@ def process_input(user_input):
         return f"Error: {str(e)}"
 
 
-with gr.Blocks(theme=gr.themes.Soft()) as demo:
+with gr.Blocks(theme=gr.themes.Base()) as demo:
 
     gr.Markdown("""
 # 🚀 Startup Validation Agent
 
-### Validate startup ideas using AI-powered market analysis,
-### competitor research, SWOT analysis, MCP, memory and security.
+### AI-Powered Startup Intelligence Platform
+
+Validate startup ideas using:
+
+- 📈 Market Analysis
+- 🏢 Competitor Research
+- ⚔️ SWOT Analysis
+- 🧠 Memory Systems
+- 🔌 MCP Integration
+- 🛡️ Security Protection
+
+<br>
 
 **Built by Roshan Kumar Jha**
+
+---
 """)
 
     startup_input = gr.Textbox(
