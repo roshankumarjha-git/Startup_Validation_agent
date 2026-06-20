@@ -106,7 +106,7 @@ with gr.Blocks(
             <h1
                 class="gradient-text"
                 style="
-                font-size:48px;
+                font-size:36px;
                 margin-bottom:10px;
                 "
             >
