@@ -396,7 +396,7 @@ The project successfully transforms a simple startup idea into a structured vali
 
 **Roshan Kumar Jha**
 
-Google AI Agents Intensive Capstone Project
+Intensive Capstone Project
 
 Built using Google Gemini, Python, Gradio, MCP Architecture, and Multi-Agent Systems.
 
@@ -404,4 +404,4 @@ Built using Google Gemini, Python, Gradio, MCP Architecture, and Multi-Agent Sys
 
 # 📜 License
 
-This project was developed for educational, research, and demonstration purposes as part of the Google AI Agents Intensive Capstone Program.
+This project was developed for educational, research, and demonstration purposes as part of the Intensive Capstone Program.
